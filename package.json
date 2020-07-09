@@ -17,6 +17,9 @@
       "pre-push": "npm run test"
     }
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/artem-solovev/regexify-string.git"
