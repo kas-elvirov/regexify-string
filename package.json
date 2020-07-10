@@ -1,6 +1,6 @@
 {
   "name": "regexify-string",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The way to decorate string by using regex with: React components, HTML tags etc.",
   "main": "index.js",
   "scripts": {

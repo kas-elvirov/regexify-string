@@ -1,8 +1,4 @@
-![npm bundle size](https://img.shields.io/bundlephobia/min/regexify-string)
-
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/artem-solovev/regexify-string)
-
-![npm](https://img.shields.io/npm/dw/regexify-string)
+![npm bundle size](https://img.shields.io/bundlephobia/min/regexify-string) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/artem-solovev/regexify-string) ![npm](https://img.shields.io/npm/dw/regexify-string)
 ---
 
 # regexify-string
