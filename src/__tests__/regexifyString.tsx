@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import expect from 'expect';
 import each from 'jest-each';
-import regexifyString, { IDecorateStringWithReactProps } from '../regexifyString';
+import regexifyString, { IDecorateStringWithReactProps } from '../index';
 
 type IData = Record<
     string,
