@@ -1,6 +1,6 @@
 {
   "name": "regexify-string",
-  "version": "1.0.5",
+  "version": "1.0.16",
   "description": "Strings decorator (by regex) with: React components, HTML tags etc.",
   "license": "MIT",
   "homepage": "https://github.com/artem-solovev/regexify-string#readme",
