@@ -1,29 +1,15 @@
 {
   "name": "regexify-string",
   "version": "1.0.5",
-  "description": "The way to decorate string by using regex with: React components, HTML tags etc.",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "build": "tsc --declaration",
-    "--- VERSIONING ---": "",
-    "version-patch:up": "npm version patch --no-git-tag-version --force && git add package.json package-lock.json",
-    "version-minor:up": "npm version minor --no-git-tag-version --force && git add package.json package-lock.json",
-    "version-major:up": "npm version major --no-git-tag-version --force && git add package.json package-lock.json"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run version-patch:up",
-      "pre-push": "npm run test"
-    }
-  },
-  "publishConfig": {
-    "registry-github": "https://npm.pkg.github.com/@artem-solovev",
-    "registry-npm": "https://registry.npmjs.org/"
-  },
+  "description": "Strings decorator (by regex) with: React components, HTML tags etc.",
+  "license": "MIT",
+  "homepage": "https://github.com/artem-solovev/regexify-string#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/artem-solovev/regexify-string.git"
+  },
+  "bugs": {
+    "url": "https://github.com/artem-solovev/regexify-string/issues"
   },
   "keywords": [
     "regex",
@@ -33,12 +19,29 @@
     "decoration",
     "parsing"
   ],
-  "author": "Artem Solovev",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/artem-solovev/regexify-string/issues"
+  "publishConfig": {
+    "registry-github": "https://npm.pkg.github.com/@artem-solovev",
+    "registry-npm": "https://registry.npmjs.org/"
   },
-  "homepage": "https://github.com/artem-solovev/regexify-string#readme",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "authors": [
+    "Artem Vadimovich Solovev <artem.solovev.lse@gmail.com> (https://github.com/artem-solovev)"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run version-patch:up",
+      "pre-push": "npm run test"
+    }
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc --declaration",
+    "--- VERSIONING ---": "",
+    "version-patch:up": "npm version patch --no-git-tag-version --force && git add package.json package-lock.json",
+    "version-minor:up": "npm version minor --no-git-tag-version --force && git add package.json package-lock.json",
+    "version-major:up": "npm version major --no-git-tag-version --force && git add package.json package-lock.json"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.4",
     "@types/node": "^14.0.20",

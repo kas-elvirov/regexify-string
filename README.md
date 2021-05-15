@@ -1,9 +1,10 @@
-![npm bundle size](https://img.shields.io/bundlephobia/min/regexify-string) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/artem-solovev/regexify-string) ![npm](https://img.shields.io/npm/dw/regexify-string)
+![npm bundle size](https://img.shields.io/bundlephobia/min/regexify-string) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/artem-solovev/regexify-string) <!-- ![npm-donwloads-per-week](https://img.shields.io/npm/dw/regexify-string) --> ![npm-donwloads-per-year](https://img.shields.io/npm/dy/regexify-string)
+
 ---
 
 # regexify-string
 
-The way to decorate string by using regex with: React components, HTML tags etc
+Strings decorator (by regex) with: React components, HTML tags etc.
 
 > perfectly works with: strings, html tags, react, react-native
 
@@ -12,6 +13,10 @@ The way to decorate string by using regex with: React components, HTML tags etc
 
 ```
 $ npm install --save regexify-string
+```
+or
+```
+$ yarn add regexify-string
 ```
 
 ## API
@@ -111,7 +116,7 @@ Type: `string`
                 </Link>
             );
         },
-        input: DisclaimerData.body,
+        input: someVariablWithData,
     });
 ```
 
