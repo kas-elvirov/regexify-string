@@ -23,6 +23,16 @@ const data: IData = {
         ],
         [
             {
+                pattern: /.*/gim,
+                decorator: (match, index) => {
+                    return 'ReplaceMe';
+                },
+                input: 'This is a test',
+            },
+            ['', 'ReplaceMe'],
+        ],
+        [
+            {
                 pattern: /\[.*?\]/gim,
                 decorator: (match, index) => {
                     switch (index) {

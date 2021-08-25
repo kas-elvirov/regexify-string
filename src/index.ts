@@ -20,6 +20,10 @@ export default function regexifyString(props: IDecorateStringWithReactProps): Ar
         const matchStartAt = result.index;
         const match = result[0];
 
+        if (match === "") {
+            break;
+        }
+
         const contentBeforeMatch: string = processedInput.substring(0, matchStartAt);
         const decoratedMatch = decorator(match, matchIndex);
 
