@@ -55,6 +55,16 @@ const data: IData = {
             },
             ['some ', <span>[text]</span>, ' with simple example'],
         ],
+        [
+            {
+                pattern: /\[.*?\]/gim,
+                decorator: (match, index) => {
+                    return <div>{match}</div>;
+                },
+                input: 'Some \n [text] \n with \n linebreaks',
+            },
+            ['Some \n ', <div>[text]</div>, ' \n with \n linebreaks'],
+        ],
     ],
     react: [
         [
