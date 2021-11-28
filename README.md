@@ -1,4 +1,4 @@
-![npm bundle size](https://img.shields.io/bundlephobia/min/regexify-string) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/artem-solovev/regexify-string) <!-- ![npm-donwloads-per-week](https://img.shields.io/npm/dw/regexify-string) --> ![npm-donwloads-per-year](https://img.shields.io/npm/dy/regexify-string)
+![npm bundle size](https://img.shields.io/bundlephobia/min/regexify-string) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/kas-elvirov/regexify-string) <!-- ![npm-donwloads-per-week](https://img.shields.io/npm/dw/regexify-string) --> ![npm-donwloads-per-year](https://img.shields.io/npm/dy/regexify-string)
 
 ---
 
@@ -132,4 +132,4 @@ Type: `string`
 
 ## License
 
-MIT © [Artem Solovev](http://www.artemsolovev.com/)
+MIT © [Kas Elvirov](http://www.kas-elvirov.com/)
