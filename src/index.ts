@@ -1,5 +1,5 @@
 export interface IDecorateStringWithReactProps {
-    decorator: (match: string, index: number) => string | JSX.Element;
+    decorator: (match: string, index: number, result?: RegExpExecArray) => string | JSX.Element;
     pattern: RegExp;
     input: string;
 }
@@ -21,7 +21,7 @@ export default function regexifyString(props: IDecorateStringWithReactProps): Ar
         const match = result[0];
 
         const contentBeforeMatch: string = processedInput.substring(0, matchStartAt);
-        const decoratedMatch = decorator(match, matchIndex);
+        const decoratedMatch = decorator(match, matchIndex, result);
 
         output.push(contentBeforeMatch);
         output.push(decoratedMatch);

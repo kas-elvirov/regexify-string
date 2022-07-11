@@ -68,6 +68,23 @@ const data: IData = {
             ['some ', <React.Fragment>[text]</React.Fragment>, ' with simple example'],
         ],
     ],
+    groups: [
+        [
+            {
+                pattern: /\[(?<id>.+)\]\{(?<name>.+)\}/g,
+                decorator: (match, index, result) => {
+                    return (
+                        <div
+                            id={String(result?.[2])}
+                            title={result?.[1]}
+                        />
+                    );
+                },
+                input: 'a[b]{c}',
+            },
+            ['a', <div id='c' title='b' />],
+        ],
+    ]
 };
 
 describe('regexifyString', () => {
@@ -87,6 +104,12 @@ describe('regexifyString', () => {
 
     each(data.react).test(
         'should handle decoration with REACT components with next params %o and gives us %s',
+        (input, expected) => {
+            expect(regexifyString(input)).toMatchObject(expected);
+        },
+    );
+    each(data.groups).test(
+        'should handle decoration with GROUPS with next params %o and gives us %s',
         (input, expected) => {
             expect(regexifyString(input)).toMatchObject(expected);
         },

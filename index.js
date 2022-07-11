@@ -10,7 +10,7 @@ function regexifyString(props) {
         var matchStartAt = result.index;
         var match = result[0];
         var contentBeforeMatch = processedInput.substring(0, matchStartAt);
-        var decoratedMatch = decorator(match, matchIndex);
+        var decoratedMatch = decorator(match, matchIndex, result);
         output.push(contentBeforeMatch);
         output.push(decoratedMatch);
         processedInput = processedInput.substring(matchStartAt + match.length, processedInput.length + 1);
