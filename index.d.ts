@@ -1,6 +1,6 @@
 /// <reference types="react" />
 export interface IDecorateStringWithReactProps {
-    decorator: (match: string, index: number) => string | JSX.Element;
+    decorator: (match: string, index: number, result?: RegExpExecArray) => string | JSX.Element;
     pattern: RegExp;
     input: string;
 }

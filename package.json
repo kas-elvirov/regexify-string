@@ -20,7 +20,7 @@
     "parsing"
   ],
   "publishConfig": {
-    "registry-github": "https://npm.pkg.github.com/@artem-solovev",
+    "registry-github": "https://npm.pkg.github.com/@kas-elvirov",
     "registry-npm": "https://registry.npmjs.org/"
   },
   "main": "index.js",
