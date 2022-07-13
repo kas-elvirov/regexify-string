@@ -29,10 +29,11 @@ Type: `RegExp`
 
 #### decorator
 
-Type: `(match: string, index: number) => string | JSX.Element`
+Type: `(match: string, index: number, result?: RegExpExecArray) => string | JSX.Element`
 
 - `match` string you would like to replace/decorate with something
 - `index` index number of the current match
+- `result?` RegExpExecArray
 
 **NOTE:** Try do not forget to use keys for React collections if needed
 
@@ -128,6 +129,26 @@ Type: `string`
         },
         input: 'some [text] with simple example',
     });
+```
+
+#### with groups
+
+```js
+    const result = regexifyString({
+        pattern: /\[(?<id>.+)\]\{(?<name>.+)\}/g,
+        decorator: (match, index, result) => {
+            return (
+                <div
+                    id={String(result?.[2])}
+                    title={result?.[1]}
+                />
+            );
+        },
+        input: 'a[b]{c}',
+    });
+
+    console.log(result);
+    // ['a', <div id='c' title='b' />]
 ```
 
 ## License
